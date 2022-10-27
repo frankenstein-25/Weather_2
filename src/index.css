@@ -26,12 +26,10 @@ code {
   color: black;
 }
 .light-mode .dark{
-  color: gray;
-  text-decoration: line-through ;
+  color: darkgray;
 }
 .dark-mode .light{
-  color: lightcyan;
-  text-decoration: line-through;
+  color: darkgray;
 }
 .dark-mode .mode{
   color: white;

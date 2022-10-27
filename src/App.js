@@ -34,7 +34,7 @@ function App() {
             <h1 className="heading">Weather App</h1>
             <div className="text-right font-size">
               <span className="light">Light</span><span className="mode">/</span><span className="dark">dark</span>
-              <Switch checked={checked} onChange={handleChange} />
+              <Switch  checked={checked} onChange={handleChange} />
             </div>
           </header>
           <Country
