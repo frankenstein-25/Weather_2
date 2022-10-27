@@ -10,7 +10,6 @@ export default function City({city:value,cities,setCities, setCity,country}) {
     const [loading,setLoading] =React.useState(true);
     const [dis,setdisable] =React.useState(true);
 
-    // const loading = open && options.length === 0;
     const fetchCitiesData = async ()=>{
         setLoading(true);
         try {
@@ -32,7 +31,6 @@ export default function City({city:value,cities,setCities, setCity,country}) {
             setdisable(false);
           else
             setdisable(true);
-          console.log(country)
           country && (async () => await fetchCitiesData())()
         },[country]);
         
