@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.padding {
+  margin-top: 80px;
+  padding: 100px;
+  background-color: gray;
+  border-radius: 30px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.padding>.css-ee20y-MuiPaper-root {
+  background-color: gray;
+}
+
+.data {
+  color: rgb(214, 214, 214);
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.span {
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+.css-1qqsdnr-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+  color: white
+}
+div>.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-width: 1px;
+  border-color: white;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline:hover {
+  border-width: 1px;
+  border-color: white !important;
+}
+
+div>.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(220, 220, 220, 0.38);
+}
+
+div>.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  color: white;
+}
+
+div>.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(255, 255, 255);
+}
+div>.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root.Mui-disabled {
+  color: rgba(220, 220, 220, 0.38);
+}
