@@ -29,15 +29,14 @@ export default function Country({allCountries,setAllCountries,setCountry,city,se
   return (
     <div>
         <Autocomplete
-         options={allCountries} 
-        getOptionLabel={(option) => option.name}
-        renderOption={(props, option) => (
+            options={allCountries} 
+            getOptionLabel={(option) => option.name}
+            renderOption={(props, option) => (
             <Box style={{ color: 'rgb(8, 8, 39)' }} component="li" {...props}>
                     {option.name}
                 </Box>
             )}
             onChange={(event, newValue) => {
-                
                 if (newValue){
                     setCountry(newValue.name)
                 }
@@ -49,7 +48,6 @@ export default function Country({allCountries,setAllCountries,setCountry,city,se
                         label="Choose"
                         InputProps={{
                             ...params.InputProps,
-                        
                         }}
                     />
                 )}

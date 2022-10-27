@@ -14,10 +14,14 @@ function App() {
   const [lat,setLat]= useState();
   const [lon,setLon]= useState();
   const[temp,setTemp]=useState();
+
  
   return (
-    <Container className='padding' maxWidth="lg" >
+    <Container className='padding' maxWidth="md" >
       <Paper elevation={0}>
+        <header>
+          <h1 className='heading'>Weather App</h1>
+        </header>
          <Country  
             setAllCountries={setAllCountries} 
             allCountries={allCountries}
