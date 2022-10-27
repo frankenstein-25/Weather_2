@@ -39,7 +39,7 @@ function App() {
           />}
          
           {city && (<LatLon  city={city} setLat={setLat} setLon={setLon} />)}
-          {lat && lon && (<Weather country={country} setLat={setLat} setLon={setLon} lat={lat} lon={lon} setTemp={setTemp} temp={temp}/>)}
+          {lat && lon && (<Weather city={city} country={country} setLat={setLat} setLon={setLon} lat={lat} lon={lon} setTemp={setTemp} temp={temp}/>)}
       </Paper>
     </Container>
   );

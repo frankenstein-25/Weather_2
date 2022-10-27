@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BsThermometerHalf, BsWind, BsSpeedometer } from "react-icons/bs";
 import { WiHumidity } from "react-icons/wi";
-export default function Weather({ country, lat, lon, setTemp, temp }) {
+
+export default function Weather({ country, lat, lon, setTemp, temp,city }) {
   const [humidity, setHumidity] = useState();
   const [wind, setWind] = useState();
   const [pressure, setPressure] = useState();
@@ -28,7 +29,7 @@ export default function Weather({ country, lat, lon, setTemp, temp }) {
   };
   useEffect(() => {
     setTemp(null);
-  }, [country]);
+  }, [city]);
 
   useEffect(() => {
     lat && lon && (async () => await fetchweatherdata())();
@@ -102,7 +103,7 @@ export default function Weather({ country, lat, lon, setTemp, temp }) {
 								}`}
 							</span>
 						</h1>
-						<h2 className="lite">{date.toDateString().slice(4)}</h2>
+						<h2 className="lite">{date.toDateString()}</h2>
 					</div>
         </div>
       )}{" "}

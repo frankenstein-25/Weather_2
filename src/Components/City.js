@@ -50,9 +50,9 @@ export default function City({city:value,cities,setCities, setCity,country}) {
     onClose={() => {
       setOpen(false);
     }}
-    isOptionEqualToValue={(option, value) => option.name === value.name }
     
-        options={cities} 
+    options={cities} 
+    // isOptionEqualToValue={(option, value) => option.name === value.name }
         value={value}
         getOptionLabel={(option) => option}
         renderOption={(props, option) => (
@@ -64,7 +64,10 @@ export default function City({city:value,cities,setCities, setCity,country}) {
         disabled={dis}
         onChange={(event, newValue) => {
             if (newValue){
-                setCity(newValue)
+                setCity(newValue);
+            }
+            else{
+              setCity(null);
             }
         }}
         loading={loading}

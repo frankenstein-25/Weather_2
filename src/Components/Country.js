@@ -39,7 +39,7 @@ export default function Country({allCountries,setAllCountries,setCountry,city,se
                     setCountry(newValue.name)
                 }
                 else{
-                    setCountry();
+                    setCountry(null);
                 }
             }}
             
