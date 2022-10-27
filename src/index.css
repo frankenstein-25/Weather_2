@@ -56,7 +56,8 @@ div>.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
 
 
 div>.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
-  border-color: rgba(220, 220, 220, 0.38);
+  border-color: rgba(220, 220, 220, 0.38) !important;
+  cursor:not-allowed !important;
 }
 
 div>.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
@@ -165,4 +166,7 @@ h1 {
 }
 h2.lite{
   margin-top: 5px;
+}
+.Mui-disabled{
+cursor: not-allowed !important;
 }

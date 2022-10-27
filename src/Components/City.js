@@ -28,7 +28,11 @@ export default function City({city:value,cities,setCities, setCity,country}) {
       useEffect(()=>{
           setCity(null);
           setCities([]);
-          setdisable(false);
+          if(country)
+            setdisable(false);
+          else
+            setdisable(true);
+          console.log(country)
           country && (async () => await fetchCitiesData())()
         },[country]);
         
@@ -67,7 +71,7 @@ export default function City({city:value,cities,setCities, setCity,country}) {
         renderInput={(params) => (
                 <TextField
                     {...params}
-                    label="Choose a country"
+                    label="Choose a City"
                     InputProps={{
                         ...params.InputProps,
                         endAdornment: (

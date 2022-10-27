@@ -14,10 +14,8 @@ export default function Country({allCountries,setAllCountries,setCountry,city,se
           if (!response.ok) throw Error("didn't receive data");
           const itemlist = await response.json();
           setAllCountries(itemlist.data);
-        //   setError(null);
         }
         catch (err) {
-        //   setError(err);
         }
       }
       useEffect(()=>{
@@ -40,12 +38,15 @@ export default function Country({allCountries,setAllCountries,setCountry,city,se
                 if (newValue){
                     setCountry(newValue.name)
                 }
+                else{
+                    setCountry();
+                }
             }}
             
             renderInput={(params) => (
                     <TextField
                         {...params}
-                        label="Choose"
+                        label="Choose a country"
                         InputProps={{
                             ...params.InputProps,
                         }}
